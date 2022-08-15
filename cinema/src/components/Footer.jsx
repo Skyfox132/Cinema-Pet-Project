@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Footer() {
-    return      (<footer className="page-footer purple darken-4">
+    return      (<footer className="page-footer red darken-4">
     <div className="container">
       <div className="row">
         <div className="col l6 s12">

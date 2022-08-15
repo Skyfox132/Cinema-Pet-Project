@@ -1,4 +1,4 @@
-import {API_KEY, API_URL} from '../config.js'
+import {API_KEY, API_URL} from '../config'
 import { React, useState, useEffect } from 'react';
 import {GoodList} from './GoodList'
 import {Preloader} from './Preloader'
@@ -20,10 +20,10 @@ function Main() {
             }
         })
         .then(response => response.json())
-        .then(data => console.log(data => {
+        .then(data => {
             data.featured && setGoods(data.featured)
             setLoading(false)
-        }))
+        })
         .catch(err => console.log(err)) 
     })
 
@@ -32,7 +32,7 @@ function Main() {
 
     return (<div className="main">
         <main>
-            <Preloader />
+            {loading ? <Preloader /> : <GoodList goods={goods} />}
         </main>
     </div>
     )

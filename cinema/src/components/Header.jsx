@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function Header() {
-    return   (<nav className="purple darken-4 navig">
+    return   (<nav className="red darken-4 navig">
                 <div className="nav-wrapper">
                 <a href="google.com" className="brand-logo right">Logo</a>
                 <ul id="nav-mobile" className="left hide-on-med-and-down">
