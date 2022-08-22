@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  min-height: calc(100vh - 310px);
+  flex-direction: column;
+
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.navig {
+  padding: 1rem;
+  height: 100px;
+}
+
+.goods {
+  display: flex;
+  max-width: 1280px;
+  margin: 4rem auto;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  margin: 5px auto;
+  flex-grow: 1;
+}
+
+.card {
+  width: 300px;
+  margin: 10px !important;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card .card-content {
+  flex-grow: 1;
+}
+
+.btn {
+  width: 120px !important;
+}
+.btn:hover {
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.card-image img{
+  height: 350px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.material-icons {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-top: 0px;
+  font-size: 2.2rem;
+  color: red;
+  transform: translateX(-50%);
+  /* left: 15% */
+}
+
+.cart {
+  position: fixed;
+  right: 6rem;
+  top: 11.2rem;
+  width: 90px;
+  height: 50px;
+  background-color: blue;
+  cursor: pointer;
+  z-index: 5;
+}
+
+
+.quantity {
+  position: relative;
+  left: 15px;
+  top: 15px;
+  color: white;
+}
+
+.closeIcon {
+  right: 50px !important;
+  text-align: right;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.backet-list {
+  text-align: left;
+  position: fixed !important;
+  width: 50rem;
+  max-width: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  z-index: 6;
+  animation: createBaset .7s ease-in-out ;
+}
+@keyframes createBaset {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+.close-basket {
+  color: #FFF;
+  font-size: 2.5rem;
+
+}
+.basketholder {
+  position: relative;
+}
+.close-tab {
+  position: absolute;
+  right: 80px;
+  top: 0;
+  /* transform: translateY(-60%); */
+  cursor: pointer;
+}
+
+.cart-item{
+  position: relative;
+}
+.delete-item {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 80px;
+  /* transform: translateY(-60%); */
+  cursor: pointer;
+}
+.btn-count {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  color: #282c34;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.cart-icon {
+  line-height: 3.2rem;
+  color: white;
+}
